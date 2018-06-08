@@ -69,3 +69,12 @@ p {
 .white-bg {
   background:#fff;
 }
+
+.footable-first-visible {
+  @include flexbox();
+  display:flex!important;
+}
+
+table p {
+  margin-bottom:0;
+}

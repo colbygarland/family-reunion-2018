@@ -54,16 +54,15 @@ jQuery(window).bind("load", function() {
       $(this).parent().parent().parent('.team-member').remove();
     });
 
+    $('.footable').footable({
+      'cascade': true
+    });
+
     $(document).ready(function(){
 
       $('.spinner').fadeOut();
 
-      $('.footable').footable({
-        'cascade': true,
-        'paging' : {
-          'enabled' : true
-        }
-      });
+
 
     });
 

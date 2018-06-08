@@ -6834,9 +6834,21 @@ p {
   display: flex;
   /* NEW, Spec - Firefox, Chrome, Opera */
   display: flex !important; }
+  @media (min-width: 992px) {
+    .footable-first-visible {
+      font-size: 35px; } }
 
 table p {
   margin-bottom: 0; }
+
+.fa-trophy {
+  margin-right: 8px; }
+  .fa-trophy.gold {
+    color: #e9c403; }
+  .fa-trophy.silver {
+    color: silver; }
+  .fa-trophy.bronze {
+    color: #CD7F32; }
 
 /*------------------------------------*\
     #MISCELANEOUS TRICKS & FIXES

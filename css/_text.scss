@@ -73,8 +73,24 @@ p {
 .footable-first-visible {
   @include flexbox();
   display:flex!important;
+  @include media-breakpoint-up(lg){
+    font-size:35px;
+  }
 }
 
 table p {
   margin-bottom:0;
+}
+
+.fa-trophy {
+  margin-right:8px;
+  &.gold {
+    color:#e9c403;
+  }
+  &.silver {
+    color:silver;
+  }
+  &.bronze {
+    color:#CD7F32;
+  }
 }

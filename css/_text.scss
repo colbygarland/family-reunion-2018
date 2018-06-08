@@ -1,0 +1,71 @@
+body {
+	font-family: $font-stack;
+	color:$text-color;
+	font-size:18px;
+  background:$bg;
+}
+::-moz-selection {
+    background: $tertiary;
+    text-shadow: none;
+}
+::selection {
+    background: $tertiary;
+    text-shadow: none;
+}
+
+a {
+	color: $text-color; 
+	text-decoration:none; 
+	font-weight:bold;
+}
+a:hover, a:focus, a:active {
+  color: $secondary;
+  text-decoration: underline;
+}
+
+.primary-color {
+	color:$primary;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color:#000;
+}
+
+h1, h2 {
+
+	text-transform: uppercase;
+	margin-bottom:30px;
+
+}
+
+h3 {
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+p {
+	line-height:1.8;
+}
+
+.btn {
+
+  border-radius:0;
+
+  &.btn-primary {
+    background-color:$primary;
+    border-color:$primary;
+    &:hover, &:focus, &:active {
+      background-color:$secondary;
+      border-color:$secondary;
+    }
+  }
+
+}
+
+.team-member {
+  margin-bottom:10px;
+}
+
+.white-bg {
+  background:#fff;
+}

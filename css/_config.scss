@@ -1,0 +1,71 @@
+/*------------------------------------*\
+    #SCSS FONT VARIABLES
+\*------------------------------------*/
+
+$font-stack: "Jua", Helvetica, Arial, sans-serif;
+
+/*------------------------------------*\
+    #SCSS COLOUR VARIABLES
+\*------------------------------------*/
+
+$text-color: #777;
+$primary: #76c7be;
+$secondary: #f57c51;
+$tertiary: #ffb037;
+
+$navacolor: #FFF;
+$navahover: #FFF;
+$navabg: $secondary;
+$navabghover: $primary;
+
+$bg:#eee;
+
+/*------------------------------------*\
+    #SCSS MIXINS
+\*------------------------------------*/
+
+@mixin flexbox(){
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+}
+
+@mixin clearfix(){
+	&:before,
+	&:after{
+		content: '';
+		display:table;
+	}
+	&:after{
+		clear:both;	
+	}
+}
+
+@mixin break($args...){
+    @if length($args) == 1{
+       @media (min-width: nth($args, 1)) {
+            @content;
+        } 
+    } 
+    @else {
+       @media (min-width: nth($args, 1)) and (max-width: nth($args, 2)) {
+            @content;
+        } 
+    } 
+}
+.row {
+  @include flexbox();
+}
+
+.content {
+
+  padding-top:60px;
+  padding-bottom:60px;
+
+  @include media-breakpoint-up(md){
+    padding-top:100px;
+    padding-bottom:100px;
+  }
+
+}

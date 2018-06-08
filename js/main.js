@@ -42,14 +42,15 @@ jQuery(window).bind("load", function() {
           }
         });
 
-    $('.team-member-dup').on('click', function(){
+    $('.team-member-dup').on('click', function(e){
+      e.preventDefault();
       var clone = $('.team-member:first-child').clone(true);
       clone.find('input').val('');
       clone.appendTo('.team-members');
     });
 
-    $('.remove-team-member').on('click', function(){
-      console.log($(this));
+    $('.remove-team-member').on('click', function(e){
+      e.preventDefault();
       $(this).parent().parent().parent('.team-member').remove();
     });
 

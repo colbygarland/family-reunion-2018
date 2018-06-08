@@ -6843,10 +6843,11 @@ table p {
     font-size: 35px; } }
 
 .fa-trophy {
-  margin-right: 8px; }
+  margin-right: 8px;
+  position: relative;
+  top: 3px; }
   @media (min-width: 992px) {
     .fa-trophy {
-      position: relative;
       top: 6px; } }
   .fa-trophy.gold {
     color: #e9c403; }

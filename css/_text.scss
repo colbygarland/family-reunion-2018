@@ -88,8 +88,9 @@ table p {
 
 .fa-trophy {
   margin-right:8px;
+  position: relative;
+  top:3px;
   @include media-breakpoint-up(lg){
-    position: relative;
     top:6px;
   }
   &.gold {

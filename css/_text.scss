@@ -73,17 +73,25 @@ p {
 .footable-first-visible {
   @include flexbox();
   display:flex!important;
-  @include media-breakpoint-up(lg){
-    font-size:35px;
-  }
+
 }
 
 table p {
   margin-bottom:0;
 }
 
+.points {
+  @include media-breakpoint-up(lg){
+    font-size:35px;
+  }
+}
+
 .fa-trophy {
   margin-right:8px;
+  @include media-breakpoint-up(lg){
+    position: relative;
+    top:6px;
+  }
   &.gold {
     color:#e9c403;
   }

@@ -6834,15 +6834,20 @@ p {
   display: flex;
   /* NEW, Spec - Firefox, Chrome, Opera */
   display: flex !important; }
-  @media (min-width: 992px) {
-    .footable-first-visible {
-      font-size: 35px; } }
 
 table p {
   margin-bottom: 0; }
 
+@media (min-width: 992px) {
+  .points {
+    font-size: 35px; } }
+
 .fa-trophy {
   margin-right: 8px; }
+  @media (min-width: 992px) {
+    .fa-trophy {
+      position: relative;
+      top: 6px; } }
   .fa-trophy.gold {
     color: #e9c403; }
   .fa-trophy.silver {

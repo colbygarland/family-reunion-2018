@@ -61,7 +61,7 @@ echo 'test';
               </thead>
               <tbody>
                 <tr>
-                  <td><i class="fas fa-trophy gold"></i> 200</td>
+                  <td class="points"><i class="fas fa-trophy gold"></i> 200</td>
                   <td>Best Team Ever</td>
                   <td>
                     <p>Colby Garland</p>
@@ -70,7 +70,7 @@ echo 'test';
                   </td>
                 </tr>
                 <tr>
-                  <td><i class="fas fa-trophy silver"></i> 100</td>
+                  <td class="points"><i class="fas fa-trophy silver"></i> 100</td>
                   <td>Team Name Example 2</td>
                   <td>
                     <p>Colby Garland</p>
@@ -79,7 +79,7 @@ echo 'test';
                   </td>
                 </tr>
                 <tr>
-                  <td><i class="fas fa-trophy bronze"></i> 50</td>
+                  <td class="points"><i class="fas fa-trophy bronze"></i> 50</td>
                   <td>Kayla's Loser Team</td>
                   <td>
                     <p>Kayla Robinson</p>
@@ -121,6 +121,10 @@ echo 'test';
               </div>
               <div class="form-group">
                 <textarea required class="form-control" name="description" placeholder="Feedback, comments, concerns, etc."></textarea>
+              </div>
+              <div class="form-group">
+                <label>Have any photos? We would love to see them!</label>
+                <input type="file" multiple name="files">
               </div>
               <div class="form-group">
                 <button type="submit" class="btn btn-primary">Submit</button>

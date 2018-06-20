@@ -153,6 +153,36 @@ body {
 
 @media only screen and (min-width: 992px) {
   
-
+  #nav-trigger, .menubtn {
+    display:none;
+  }
+  
+  .mobile-menu {
+    
+    width:70%;
+    display:flex;
+    justify-content: center;
+    z-index:1;
+    background:$primary;
+    top:139px;
+    height:49px;
+    left:0;
+    right:0;
+    margin:0 auto;
+    
+    li {
+      a {
+        background:none;
+        text-align:center;
+        transition:0.3s;
+      }
+      &.current_page_item, &:hover, &:active, &:focus {
+        a {
+          color:$secondary;
+        }
+      }
+    }
+    
+  }
 
 }

@@ -27,7 +27,7 @@ a:hover, a:focus, a:active {
 	color:$primary;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h5, h6 {
 	color:#000;
 }
 
@@ -71,8 +71,8 @@ p {
 }
 
 .footable-first-visible {
-  @include flexbox();
-  display:flex!important;
+  //@include flexbox();
+ // display:flex!important;
 
 }
 
@@ -108,4 +108,8 @@ table p {
   background:#fff;
   padding:20px;
   margin-bottom:30px;
+}
+
+.slick-prev:before, .slick-next:before {
+  color:#000;
 }

@@ -59,12 +59,21 @@ jQuery(window).bind("load", function() {
     });
 
     $(document).ready(function(){
-
       $('.spinner').fadeOut();
-
-
-
     });
+    
+    if ( $('.slider').length ){
+      $('.slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 900,
+        slidesToShow: 1,
+        adaptiveHeight: false,
+        arrows:true,
+        autoplay:true,
+        autoplaySpeed:10000
+      });
+    }
 
   });
 });

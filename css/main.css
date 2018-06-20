@@ -6695,6 +6695,9 @@ a.text-dark:hover, a.text-dark:focus {
       padding-top: 100px;
       padding-bottom: 100px; } }
 
+.content-smaller {
+  padding-bottom: 0 !important; }
+
 table.footable-details, table.footable > thead > tr.footable-filtering > th div.form-group {
   margin-bottom: 0; }
 

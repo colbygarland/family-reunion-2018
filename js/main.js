@@ -71,7 +71,7 @@ jQuery(window).bind("load", function() {
         adaptiveHeight: false,
         arrows:true,
         autoplay:true,
-        autoplaySpeed:10000
+        autoplaySpeed:8000
       });
     }
 

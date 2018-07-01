@@ -7306,5 +7306,29 @@ form .form-control {
     max-height: 100vh;
     display: block;
     margin: 0 auto; }
+  .slider h1 {
+    position: absolute;
+    bottom: 15px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 40px;
+    width: 290px;
+    text-align: center;
+    border-radius: 50%;
+    transform: translateX(-40px); }
+    .slider h1:after {
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 40px 40px 40px;
+      border-color: transparent transparent #fff transparent;
+      position: absolute;
+      top: -30px;
+      left: 0;
+      right: 0;
+      margin: 0 auto; }
 
 /*# sourceMappingURL=main.css.map */

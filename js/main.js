@@ -70,7 +70,7 @@ jQuery(window).bind("load", function() {
         slidesToShow: 1,
         adaptiveHeight: false,
         arrows:true,
-        autoplay:true,
+        autoplay:false,
         autoplaySpeed:6000,
         lazyLoad: 'ondemand'
       });

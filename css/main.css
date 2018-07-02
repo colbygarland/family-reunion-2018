@@ -6951,7 +6951,7 @@ body {
   font-family: "Jua", Helvetica, Arial, sans-serif;
   color: #777;
   font-size: 18px;
-  background: #222; }
+  background: #eee; }
 
 ::-moz-selection {
   background: #ffb037;
@@ -7216,7 +7216,7 @@ header.main {
 .site-wrap {
   min-height: 100%;
   min-width: 100%;
-  background-color: #222;
+  background-color: #eee;
   position: relative;
   top: 0;
   bottom: 100%;

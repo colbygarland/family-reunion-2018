@@ -73,6 +73,8 @@ jQuery(window).bind("load", function() {
         autoplay:true,
         autoplaySpeed:6000,
         lazyLoad: 'ondemand'
+      });
+    }
 
   });
 });
